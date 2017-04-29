@@ -50,6 +50,7 @@ declare namespace libphonenumber {
         isNANPACountry(regionCode: string): boolean;
         format(phoneNumber: PhoneNumber, format: PhoneNumberFormat): string;
         parseAndKeepRawInput(number: string, regionCode: string): PhoneNumber;
+        getExampleNumberForType(country:string, PhoneNumber?:PhoneNumberFormat): string;
     }
 
     export class AsYouTypeFormatter {
